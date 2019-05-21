@@ -1,5 +1,48 @@
-.App {
-  text-align: center;
-  color: green;
+.navbar {
+  border-bottom: 1px solid grey;
+  background-color: white;
+  opacity: 50%;
+}
+
+.header_wrapper {
+  height: 100vh;
+}
+
+#background_image {
+  width: 100%;
+  max-height: 150vh;
+  position: absolute;
+  top: -25%;
+  left: 0;
+  z-index: -1;
+}
+
+.about_wrapper {
+  min-height: 200px;
+  background-color: lightblue;
+}
+
+.about_wrapper .container {
+  padding: 10em;
+}
+
+.about_wrapper img {
+  width: 300px;
+}
+
+.food_wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffe9ec;
+}
+
+.food_wrapper .carousel_wrapper {
+  width: 900px;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.food_wrapper #food_carousel {
+  width: 700px;
 }
 /*# sourceMappingURL=App.css.map */
