@@ -1,5 +1,4 @@
 import React from 'react';
-//import macarons from "../resources/images/coconut_buttercream_macarons.jpg"
 
 const Header = () => {
   return (
@@ -79,14 +78,14 @@ const Header = () => {
               <div className="col-md-10">
 
                 {/* Heading */}
-                <h2 className="display-4 font-weight-bold white-text pt-5 mb-2">Sooo GOOD...</h2>
+                <h2 className="display-4 font-weight-bold white-text pt-5 mb-2">OMG Sooo GOOD...</h2>
 
                 {/* Divider */}
                 <hr className="hr-light"></hr>
 
                 {/* Description */}
                 <h4 className="white-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consequuntur.</h4>
-                <button type="button" className="btn btn-outline-white">Find out why<i className="fas fa-arrow-down ml-2"></i></button>
+                <a href="#story"><button type="button" className="btn btn-outline-white">Find out why<i className="fas fa-arrow-down ml-2"></i></button></a>
 
               </div>
 

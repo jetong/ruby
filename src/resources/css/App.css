@@ -6,8 +6,7 @@ header,
 }
 
 #intro {
-  background: url(../images/coconut_buttercream_macarons.jpg) no-repeat center
-    center fixed;
+  background: url(../images/coconut_buttercream_macarons.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -26,5 +25,34 @@ header,
   .navbar:not(.top-nav-collapse) {
     background-color: #24355c;
   }
+}
+
+.story_wrapper {
+  min-height: 200px;
+  background-color: lightblue;
+}
+
+.story_wrapper .container {
+  padding: 10em;
+}
+
+.story_wrapper img {
+  width: 300px;
+}
+
+.food_wrapper {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffe9ec;
+}
+
+.food_wrapper .carousel_wrapper {
+  width: 900px;
+  height: 1000px;
+  overflow: hidden;
+}
+
+.food_wrapper #food_carousel {
+  width: 700px;
 }
 /*# sourceMappingURL=App.css.map */
