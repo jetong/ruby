@@ -1,7 +1,8 @@
 html,
 body,
 header,
-#intro {
+#intro,
+#story {
   height: 100vh;
 }
 
@@ -27,32 +28,32 @@ header,
   }
 }
 
-.story_wrapper {
+.story-wrapper {
   min-height: 200px;
   background-color: lightblue;
 }
 
-.story_wrapper .container {
-  padding: 10em;
+.story-wrapper .container {
+  padding: 8em 6em 8em 6em;
 }
 
-.story_wrapper img {
+.story-wrapper img {
   width: 300px;
 }
 
-.food_wrapper {
+.food-wrapper {
   height: 100vh;
   width: 100%;
   background-color: #ffe9ec;
 }
 
-.food_wrapper .carousel_wrapper {
+.food-wrapper .carousel-wrapper {
   width: 900px;
   height: 1000px;
   overflow: hidden;
 }
 
-.food_wrapper #food_carousel {
+.food-wrapper #food-carousel {
   width: 700px;
 }
 /*# sourceMappingURL=App.css.map */

@@ -5,11 +5,11 @@ import Cupcake from "../resources/images/cupcake.jpg"
 class Food extends Component {
     render() {
         return (
-            <div id="food_gallery" className="food_wrapper">
+            <div id="food-gallery" className="food-wrapper">
                 Food Gallery
-                <div className="carousel_wrapper">
+                <div className="carousel-wrapper">
                     <div className="container">
-                        <div id="food_carousel" className="carousel slide container" data-ride="carousel">
+                        <div id="food-carousel" className="carousel slide container" data-ride="carousel">
                             <div className="carousel-inner">
                                 <div className="carousel-item active">
                                     <img src={Coco} className="d-block w-100 img-fluid" alt="..."></img>
