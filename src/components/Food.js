@@ -5,7 +5,7 @@ import Cupcake from "../resources/images/cupcake.jpg"
 class Food extends Component {
     render() {
         return (
-            <div className="food_wrapper">
+            <div id="food_gallery" className="food_wrapper">
                 Food Gallery
                 <div className="carousel_wrapper">
                     <div className="container">

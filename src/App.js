@@ -1,16 +1,22 @@
 import React from "react";
 
-import Header from "./components/Header"
-import About from "./components/About"
-import Food from "./components/Food"
-import Footer from "./components/Footer"
+import Header from "./components/Header";
+import Story from "./components/Story";
+import Food from "./components/Food";
+import Testimonials from "./components/Testimonials";
+import Art from "./components/Art";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <About />
+      <Story />
       <Food />
+      <Testimonials />
+      <Art />
+      <Contact />
       <Footer />
     </div>
   );

@@ -2,9 +2,9 @@ import React from 'react';
 
 import Photo from "../resources/images/cupcake.jpg"
 
-const About = () => {
+const Story = () => {
     return (
-        <div className="about_wrapper">
+        <div id="story" className="story_wrapper">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 text-center">
@@ -24,4 +24,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Story;
