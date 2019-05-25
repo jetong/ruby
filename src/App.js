@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Story />
       <Food />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Art />
       <Contact />
       <Footer />

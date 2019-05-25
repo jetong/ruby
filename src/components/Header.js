@@ -31,7 +31,7 @@ const Header = () => {
                 <a className="nav-link" href="#story">Story</a>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#food-gallery">Gallery</a>
+                <a className="nav-link" href="#food">Gallery</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#testimonials">Testimonials</a>
@@ -84,7 +84,7 @@ const Header = () => {
                 <hr className="hr-light"></hr>
 
                 {/* Description */}
-                <h4 className="white-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti consequuntur.</h4>
+                <h4 className="white-text my-4">Even the toughest critics have quietly surrendered to the tastes.</h4>
                 <a href="#story"><button type="button" className="btn btn-outline-white">Find out why<i className="fas fa-arrow-down ml-2"></i></button></a>
 
               </div>

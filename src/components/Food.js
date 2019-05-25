@@ -1,50 +1,77 @@
 import React, { Component } from 'react';
-import Coco from "../resources/images/coconut_buttercream_macarons.jpg"
-import Cupcake from "../resources/images/cupcake.jpg"
+
+import img1 from "../resources/images/gallery/almond_toffee.jpg";
+import img2 from "../resources/images/gallery/autumn_mango_cake.jpg";
+import img3 from "../resources/images/gallery/blood_orange.jpg";
 
 class Food extends Component {
+
     render() {
         return (
-            <div id="food-gallery" className="food-wrapper">
-                Food Gallery
-                <div className="carousel-wrapper">
-                    <div className="container">
-                        <div id="food-carousel" className="carousel slide container" data-ride="carousel">
-                            <div className="carousel-inner">
-                                <div className="carousel-item active">
-                                    <img src={Coco} className="d-block w-100 img-fluid" alt="..."></img>
-                                    <div className="carousel-caption d-none d-md-block">
-                                        <h5>Coconut Buttercream Macarons</h5>
-                                        <p>Cocunut</p>
-                                    </div>
+            <div id="food" className="container food-wrapper">
+
+                <h2 className="font-weight-bold my-4 text-center">The Unique Flavors</h2>
+
+                <div className="row justify-content-center">
+
+                    {/* Carousel Wrapper */}
+                    <div id="carousel" className="carousel slide carousel-fade carousel-wrapper" data-ride="carousel">
+
+                        {/* Slides */}
+                        <div className="carousel-inner" role="listbox">
+                            <div className="carousel-item active">
+                                <div className="view img-size">
+                                    <img className="d-block" src={img1}
+                                        alt={img1} />
                                 </div>
-                                <div className="carousel-item">
-                                    <img src={Cupcake} className="d-block w-100 img-fluid" alt="..."></img>
-                                    <div className="carousel-caption d-none d-md-block">
-                                        <h5>Second slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
-                                </div>
-                                <div className="carousel-item">
-                                    <img src={Coco} className="d-block w-100 img-fluid" alt="..."></img>
-                                    <div className="carousel-caption d-none d-md-block">
-                                        <h5>Third slide label</h5>
-                                        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-                                    </div>
+                                <div className="carousel-caption">
+                                    <h3 className="h3-responsive">Light mask</h3>
+                                    <p>{img1}</p>
                                 </div>
                             </div>
-                            <a className="carousel-control-prev" href="#food_carousel" role="button" data-slide="prev">
-                                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Previous</span>
-                            </a>
-                            <a className="carousel-control-next" href="#food_carousel" role="button" data-slide="next">
-                                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span className="sr-only">Next</span>
-                            </a>
+                            <div className="carousel-item">
+                                {/* Mask color */}
+                                <div className="view img-size">
+                                    <img className="d-block" src={img2}
+                                        alt="Second slide" />
+                                </div>
+                                <div className="carousel-caption">
+                                    <h3 className="h3-responsive">Strong mask</h3>
+                                    <p>Secondary text</p>
+                                </div>
+                            </div>
+                            <div className="carousel-item">
+                                {/* Mask color */}
+                                <div className="view img-size">
+                                    <img className="d-block" src={img3}
+                                        alt="Third slide" />
+                                </div>
+                                <div className="carousel-caption">
+                                    <h3 className="h3-responsive">Title</h3>
+                                    <p>Third text</p>
+                                </div>
+                            </div>
                         </div>
+                        {/* end Slides */}
+
+                        {/* Controls */}
+                        <a className="carousel-control-prev" href="#carousel" role="button" data-slide="prev" >
+                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Previous</span>
+                        </a>
+                        <a className="carousel-control-next" href="#carousel" role="button" data-slide="next" >
+                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span className="sr-only">Next</span>
+                        </a>
+                        {/* end Controls */}
+
                     </div>
+                    {/* end Carousel Wrapper  */}
+
                 </div>
-            </div>
+
+            </div >
+
         );
     }
 }

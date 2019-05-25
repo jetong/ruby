@@ -47,13 +47,25 @@ header,
 .food-wrapper {
   height: 100vh;
   width: 100%;
-  background-color: lighten($color: lightpink, $amount: 10);
-  .carousel-wrapper {
-    width: 900px;
-    height: 1000px;
-    overflow: hidden;
+  padding: 1em;
+  .row {
+    padding: 1em 0;
   }
-  #food-carousel {
-    width: 700px;
-  }
+}
+
+.carousel-wrapper {
+  width: 375px;
+  border: 1px solid;
+  padding: 1em;
+  box-shadow: 5px 10px #888888;
+}
+
+.img-size img {
+  width: auto;
+  height: 500px;
+  max-height: 500px;
+}
+
+.art-wrapper {
+  padding-bottom: 5em;
 }
