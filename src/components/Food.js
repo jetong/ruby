@@ -24,10 +24,6 @@ class Food extends Component {
                                     <img className="d-block" src={img1}
                                         alt={img1} />
                                 </div>
-                                <div className="carousel-caption">
-                                    <h3 className="h3-responsive">Light mask</h3>
-                                    <p>{img1}</p>
-                                </div>
                             </div>
                             <div className="carousel-item">
                                 {/* Mask color */}
@@ -35,20 +31,12 @@ class Food extends Component {
                                     <img className="d-block" src={img2}
                                         alt="Second slide" />
                                 </div>
-                                <div className="carousel-caption">
-                                    <h3 className="h3-responsive">Strong mask</h3>
-                                    <p>Secondary text</p>
-                                </div>
                             </div>
                             <div className="carousel-item">
                                 {/* Mask color */}
                                 <div className="view img-size">
                                     <img className="d-block" src={img3}
                                         alt="Third slide" />
-                                </div>
-                                <div className="carousel-caption">
-                                    <h3 className="h3-responsive">Title</h3>
-                                    <p>Third text</p>
                                 </div>
                             </div>
                         </div>
