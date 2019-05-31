@@ -11,7 +11,7 @@ const Header = () => {
         <div className="container">
 
           {/* Navbar brand */}
-          <a className="navbar-brand" href="/">Ruby's Kitchen</a>
+          <a className="navbar-brand" href="#">Ruby's Kitchen</a>
 
           {/* Collapse button */}
           <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
