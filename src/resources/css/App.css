@@ -34,7 +34,7 @@ header,
 }
 
 .story-wrapper .container {
-  padding: 8em 6em 8em 6em;
+  padding: 6em;
 }
 
 .story-wrapper img {
@@ -51,6 +51,15 @@ header,
   padding: 1em 0;
 }
 
+@media (max-width: 992px) {
+  .food-wrapper {
+    height: 180vh;
+  }
+  .food-wrapper .column-wrapper {
+    margin: 1em 0;
+  }
+}
+
 .carousel-wrapper {
   width: 375px;
   border: 1px solid;
@@ -65,7 +74,23 @@ header,
   max-height: 500px;
 }
 
-.art-wrapper {
-  padding-bottom: 5em;
+@media (max-width: 768px) {
+  #map-container {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #map-container {
+    margin-left: 5em;
+  }
+}
+
+.section-wrapper {
+  padding: 2em 0;
+}
+
+.carousel-outer-wrapper {
+  max-width: 400px;
 }
 /*# sourceMappingURL=App.css.map */

@@ -8,55 +8,128 @@ class Food extends Component {
 
     render() {
         return (
-            <div id="food" className="container food-wrapper">
+            <div id="food" className="container food-wrapper section-wrapper">
 
-                <h2 className="font-weight-bold my-4 text-center">The Unique Flavors</h2>
+                <h2 className="font-weight-bold my-2 text-center">Inside the Kitchen</h2>
 
+                {/* Main Row */}
                 <div className="row justify-content-center">
 
-                    {/* Carousel Wrapper */}
-                    <div id="carousel" className="carousel slide carousel-fade carousel-wrapper" data-ride="carousel">
+                    {/* Left Carousel */}
+                    <div className="col-lg-6 column-wrapper">
+                        <div className="container">
+                            <div className="row justify-content-center">
+                                <div className="carousel-outer-wrapper">
 
-                        {/* Slides */}
-                        <div className="carousel-inner" role="listbox">
-                            <div className="carousel-item active">
-                                <div className="view img-size">
-                                    <img className="d-block" src={img1}
-                                        alt={img1} />
+                                    <h3 className="text-center">Savory Sensations</h3>
+
+                                    {/* Carousel Wrapper */}
+                                    <div id="carousel-1" className="carousel slide carousel-fade carousel-wrapper" data-ride="carousel-1">
+
+                                        {/* Slides */}
+                                        <div className="carousel-inner" role="listbox">
+                                            <div className="carousel-item active">
+                                                <div className="view img-size">
+                                                    <img className="d-block" src={img1}
+                                                        alt={img1} />
+                                                </div>
+                                            </div>
+                                            <div className="carousel-item">
+                                                {/* Mask color */}
+                                                <div className="view img-size">
+                                                    <img className="d-block" src={img2}
+                                                        alt="Second slide" />
+                                                </div>
+                                            </div>
+                                            <div className="carousel-item">
+                                                {/* Mask color */}
+                                                <div className="view img-size">
+                                                    <img className="d-block" src={img3}
+                                                        alt="Third slide" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* end Slides */}
+
+                                        {/* Controls */}
+                                        <a id="c1" className="carousel-control-prev carousel-control" href="#carousel-1" role="button" data-slide="prev" >
+                                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span className="sr-only">Previous</span>
+                                        </a>
+                                        <a className="carousel-control-next carousel-control" href="#carousel-1" role="button" data-slide="next" >
+                                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span className="sr-only">Next</span>
+                                        </a>
+                                        {/* end Controls */}
+
+                                    </div>
+                                    {/* end Carousel Wrapper  */}
                                 </div>
+
                             </div>
-                            <div className="carousel-item">
-                                {/* Mask color */}
-                                <div className="view img-size">
-                                    <img className="d-block" src={img2}
-                                        alt="Second slide" />
-                                </div>
-                            </div>
-                            <div className="carousel-item">
-                                {/* Mask color */}
-                                <div className="view img-size">
-                                    <img className="d-block" src={img3}
-                                        alt="Third slide" />
+                        </div>
+                    </div>
+                    {/* end Left Carousel */}
+
+
+                    {/* Right Carousel */}
+                    <div className="col-lg-6 column-wrapper">
+                        <div className="container">
+                            <div className="row justify-content-center">
+                                <div className="carousel-outer-wrapper">
+
+                                    <h3 className="text-center">Sweet Temptations</h3>
+
+                                    {/* Carousel Wrapper */}
+                                    <div id="carousel-2" className="carousel slide carousel-fade carousel-wrapper" data-ride="carousel-2">
+
+                                        {/* Slides */}
+                                        <div className="carousel-inner" role="listbox">
+                                            <div className="carousel-item active">
+                                                <div className="view img-size">
+                                                    <img className="d-block" src={img1}
+                                                        alt={img1} />
+                                                </div>
+                                            </div>
+                                            <div className="carousel-item">
+                                                {/* Mask color */}
+                                                <div className="view img-size">
+                                                    <img className="d-block" src={img2}
+                                                        alt="Second slide" />
+                                                </div>
+                                            </div>
+                                            <div className="carousel-item">
+                                                {/* Mask color */}
+                                                <div className="view img-size">
+                                                    <img className="d-block" src={img3}
+                                                        alt="Third slide" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        {/* end Slides */}
+
+                                        {/* Controls */}
+                                        <a className="carousel-control-prev" href="#carousel-2" role="button" data-slide="prev" >
+                                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span className="sr-only">Previous</span>
+                                        </a>
+                                        <a className="carousel-control-next" href="#carousel-2" role="button" data-slide="next" >
+                                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span className="sr-only">Next</span>
+                                        </a>
+                                        {/* end Controls */}
+
+                                    </div>
+                                    {/* end Carousel Wrapper  */}
                                 </div>
                             </div>
                         </div>
-                        {/* end Slides */}
-
-                        {/* Controls */}
-                        <a className="carousel-control-prev" href="#carousel" role="button" data-slide="prev" >
-                            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Previous</span>
-                        </a>
-                        <a className="carousel-control-next" href="#carousel" role="button" data-slide="next" >
-                            <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span className="sr-only">Next</span>
-                        </a>
-                        {/* end Controls */}
-
                     </div>
-                    {/* end Carousel Wrapper  */}
+                    {/* end Right Carousel */}
+
 
                 </div>
+                {/* end Main Row */}
 
             </div >
 

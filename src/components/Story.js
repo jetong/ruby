@@ -4,7 +4,7 @@ import Photo from "../resources/images/cupcake.jpg"
 
 const Story = () => {
     return (
-        <div id="story" className="story-wrapper">
+        <div id="story" className="story-wrapper section-wrapper">
             <div className="container">
                 <div className="row">
 

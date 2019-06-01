@@ -2,10 +2,12 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section id="contact">
+        <section id="contact" className="section-wrapper">
+
+            <hr className="my-5"></hr>
 
             {/* Heading */}
-            <h2 className="mb-5 font-weight-bold text-center">Contact me</h2>
+            <h2 className="my-5 font-weight-bold text-center">Contact me</h2>
 
             {/* Grid row */}
             <div className="row mb-5">
@@ -17,22 +19,22 @@ const Contact = () => {
                         <div className="md-form form-sm">
                             <i className="fas fa-user prefix"></i>
                             <input type="text" id="form3" className="form-control form-control-sm"></input>
-                            <label htmlfor="form3">Your name</label>
+                            <label htmlFor="form3">Your name</label>
                         </div>
                         <div className="md-form form-sm">
                             <i className="fas fa-envelope prefix"></i>
                             <input type="text" id="form2" className="form-control form-control-sm"></input>
-                            <label htmlfor="form2">Your email</label>
+                            <label htmlFor="form2">Your email</label>
                         </div>
                         <div className="md-form form-sm">
                             <i className="fas fa-tag prefix"></i>
                             <input type="text" id="form32" className="form-control form-control-sm"></input>
-                            <label htmlfor="form32">Subject</label>
+                            <label htmlFor="form32">Subject</label>
                         </div>
                         <div className="md-form form-sm">
                             <i className="fas fa-pencil-alt prefix"></i>
                             <textarea type="text" id="form8" className="md-textarea form-control form-control-sm" rows="4"></textarea>
-                            <label htmlfor="form8">Your message</label>
+                            <label htmlFor="form8">Your message</label>
                         </div>
                         <div className="text-center mt-4">
                             <button className="btn btn-primary">Send <i className="far fa-paper-planeml-1"></i></button>
@@ -77,13 +79,13 @@ const Contact = () => {
 
 
                     {/* Grid row */}
-                    <div className="row">
+                    <div className="row justify-content-center">
 
                         {/* Google map */}
                         <div id="map-container" className="z-depth-1-half map-container mb-5" style={{ height: "400px" }}>
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12690.536424152671!2d-121.98454667934567!3d37.32749391041126!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fcaef21054665%3A0x2fa5abfd628b6fa6!2sStevens+Creek+Toyota!5e0!3m2!1sen!2sus!4v1558032106679!5m2!1sen!2sus"
-                                title="map" width="600" height="450" frameborder="0" style={{ border: "0" }} allowfullscreen></iframe>
+                                title="map" width="600" height="450" frameBorder="0" style={{ border: "0" }} allowFullScreen></iframe>
                         </div>
 
                     </div>

@@ -49,8 +49,7 @@ const Footer = () => {
                             <strong>Ruby's Kitchen</strong>
                         </h6>
                         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto" style={{ width: "60px" }}></hr>
-                        <p>Here you can use rows and columns here to organize your footer content. Lorem ipsum dolor sit
-            amet, consectetur adipisicing elit.</p>
+                        <p>OMG Sooo GOOD!</p>
                     </div>
                     {/* First column */}
 
