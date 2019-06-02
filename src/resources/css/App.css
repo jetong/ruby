@@ -87,10 +87,26 @@ header,
 }
 
 .section-wrapper {
-  padding: 2em 0;
+  padding-bottom: 2em;
 }
 
 .carousel-outer-wrapper {
   max-width: 400px;
+}
+
+#testimonials .card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1.25em;
+}
+
+#testimonials .card-img-top {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.fa-star,
+.fa-star-half-alt {
+  color: orange;
 }
 /*# sourceMappingURL=App.css.map */

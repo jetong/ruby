@@ -32,7 +32,7 @@ const Art = () => {
                             <div className="row">
 
                                 <figure className="col-md-3">
-                                    <a href={img01} data-size="781x1172" data-toggle="lightbox" data-gallery="art-gallery" data-footer="image 1">
+                                    <a href={img01} data-size="781x1172" data-toggle="lightbox" data-gallery="art-gallery">
                                         <img src={img01} className="img-fluid" alt="img01"></img>
                                     </a>
                                 </figure>
