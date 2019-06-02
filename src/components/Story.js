@@ -8,7 +8,7 @@ const Story = () => {
             <div className="container">
                 <div className="row">
 
-                    <div className="col-lg-6 text-center story-text align-content-center">
+                    <div className="col-lg-6 text-center story-text">
                         <h2>Her Story</h2>
                         <p>
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, maiores soluta est laboriosam id sequi vero magni, praesentium labore autem voluptatum iste aspernatur tenetur neque, eum nulla accusamus placeat porro!

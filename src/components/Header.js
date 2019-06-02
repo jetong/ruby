@@ -4,7 +4,7 @@ const Header = () => {
   return (
 
     // Main Navigation
-    <header>
+    <header className="header-wrapper">
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
 
@@ -25,7 +25,7 @@ const Header = () => {
             {/* Links */}
             <ul className="navbar-nav mr-auto">
               <li className="nav-item">
-                <a className="nav-link" href="#intro">Home</a>
+                <a className="nav-link" href="#header">Home</a>
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#story">Story</a>
@@ -67,7 +67,7 @@ const Header = () => {
 
 
       {/* Mask */}
-      <div id="intro" className="view">
+      <div id="header" className="view">
 
         <div className="mask rgba-black-light">
 

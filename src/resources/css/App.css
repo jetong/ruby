@@ -1,19 +1,17 @@
 html,
 body,
-header,
-#intro,
-#story {
+#header,
+.story-wrapper,
+.food-wrapper {
   height: 100vh;
 }
 
-#intro {
-  background: url(../images/coconut_buttercream_macarons.jpg) no-repeat center center fixed;
-  background-size: cover;
+.spacer {
+  margin-top: 40px;
 }
 
-/* Navbar */
-.top-nav-collapse {
-  background-color: #24355c;
+.section-wrapper {
+  padding-bottom: 2em;
 }
 
 @media (max-width: 768px) {
@@ -26,6 +24,15 @@ header,
   .navbar:not(.top-nav-collapse) {
     background-color: #24355c;
   }
+}
+
+.header-wrapper #header {
+  background: url(../images/coconut_buttercream_macarons.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header-wrapper .top-nav-collapse {
+  background-color: #24355c;
 }
 
 .story-wrapper {
@@ -42,13 +49,30 @@ header,
 }
 
 .food-wrapper {
-  height: 100vh;
   width: 100%;
   padding: 1em;
 }
 
 .food-wrapper .row {
   padding: 1em 0;
+}
+
+.food-wrapper .row .carousel-outer-wrapper {
+  max-width: 400px;
+}
+
+.food-wrapper .row .carousel-outer-wrapper .carousel-wrapper {
+  width: 325px;
+  border: 1px solid;
+  padding: 1em;
+  -webkit-box-shadow: 5px 10px #888888;
+          box-shadow: 5px 10px #888888;
+}
+
+.food-wrapper .row .carousel-outer-wrapper .carousel-wrapper .img-size img {
+  width: auto;
+  height: 400px;
+  max-height: 400px;
 }
 
 @media (max-width: 992px) {
@@ -60,18 +84,20 @@ header,
   }
 }
 
-.carousel-wrapper {
-  width: 375px;
-  border: 1px solid;
-  padding: 1em;
-  -webkit-box-shadow: 5px 10px #888888;
-          box-shadow: 5px 10px #888888;
+.testimonials-wrapper .card {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  padding: 1.25em;
 }
 
-.img-size img {
-  width: auto;
-  height: 500px;
-  max-height: 500px;
+.testimonials-wrapper .card .card-img-top {
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.testimonials-wrapper .card .fa-star,
+.testimonials-wrapper .card .fa-star-half-alt {
+  color: orange;
 }
 
 @media (max-width: 768px) {
@@ -84,29 +110,5 @@ header,
   #map-container {
     margin-left: 5em;
   }
-}
-
-.section-wrapper {
-  padding-bottom: 2em;
-}
-
-.carousel-outer-wrapper {
-  max-width: 400px;
-}
-
-#testimonials .card {
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  padding: 1.25em;
-}
-
-#testimonials .card-img-top {
-  padding-left: 20%;
-  padding-right: 20%;
-}
-
-.fa-star,
-.fa-star-half-alt {
-  color: orange;
 }
 /*# sourceMappingURL=App.css.map */

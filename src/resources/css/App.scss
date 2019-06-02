@@ -1,24 +1,19 @@
 html,
 body,
-header,
-#intro,
-#story {
+#header,
+.story-wrapper,
+.food-wrapper {
   height: 100vh;
 }
 
-#intro {
-  background: url(../images/coconut_buttercream_macarons.jpg) no-repeat center
-    center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.spacer {
+  margin-top: 40px;
 }
 
-/* Navbar */
-.top-nav-collapse {
-  background-color: #24355c;
+.section-wrapper {
+  padding-bottom: 2em;
 }
+
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
     background-color: #24355c;
@@ -30,7 +25,24 @@ header,
   }
 }
 
-// ABOUT
+// HEADER
+.header-wrapper {
+  #header {
+    background: url(../images/coconut_buttercream_macarons.jpg) no-repeat center
+      center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  // Navbar collapsed color
+  .top-nav-collapse {
+    background-color: #24355c;
+  }
+}
+
+// ABOUT SECTION
 .story-wrapper {
   min-height: 200px;
   background-color: lightblue;
@@ -43,13 +55,30 @@ header,
   }
 }
 
-// FOOD GALLERY
+// FOOD SECTION
 .food-wrapper {
-  height: 100vh;
   width: 100%;
   padding: 1em;
+
   .row {
     padding: 1em 0;
+
+    .carousel-outer-wrapper {
+      max-width: 400px;
+
+      .carousel-wrapper {
+        width: 325px;
+        border: 1px solid;
+        padding: 1em;
+        box-shadow: 5px 10px #888888;
+
+        .img-size img {
+          width: auto;
+          height: 400px;
+          max-height: 400px;
+        }
+      }
+    }
   }
 
   @media (max-width: 992px) {
@@ -60,19 +89,25 @@ header,
   }
 }
 
-.carousel-wrapper {
-  width: 375px;
-  border: 1px solid;
-  padding: 1em;
-  box-shadow: 5px 10px #888888;
+// TESTIMONIALS SECTION
+.testimonials-wrapper {
+  .card {
+    box-shadow: none;
+    padding: 1.25em;
+
+    .card-img-top {
+      padding-left: 20%;
+      padding-right: 20%;
+    }
+
+    .fa-star,
+    .fa-star-half-alt {
+      color: orange;
+    }
+  }
 }
 
-.img-size img {
-  width: auto;
-  height: 500px;
-  max-height: 500px;
-}
-
+// CONTACT SECTION
 #map-container {
   @media (max-width: 768px) {
     display: none;
@@ -81,29 +116,4 @@ header,
   @media (min-width: 992px) and (max-width: 1200px) {
     margin-left: 5em;
   }
-}
-
-.section-wrapper {
-  padding-bottom: 2em;
-}
-
-.carousel-outer-wrapper {
-  max-width: 400px;
-}
-
-#testimonials {
-  .card {
-    box-shadow: none;
-    padding: 1.25em;
-  }
-
-  .card-img-top {
-    padding-left: 20%;
-    padding-right: 20%;
-  }
-}
-
-.fa-star,
-.fa-star-half-alt {
-  color: orange;
 }
