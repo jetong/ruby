@@ -118,8 +118,20 @@ body,
   color: orange;
 }
 
+@media (max-width: 768px) {
+  .testimonials-wrapper .card:not(:first-child) {
+    display: none;
+  }
+}
+
 .art-wrapper .spacer {
   padding-top: 1em;
+}
+
+@media (max-width: 768px) {
+  .art-wrapper .hide {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {

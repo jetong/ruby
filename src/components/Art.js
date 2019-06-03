@@ -42,13 +42,13 @@ const Art = () => {
 
                                     <figure className="col-md-3">
                                         <a href={img02} data-size="781x1172" data-toggle="lightbox" data-gallery="art-gallery">
-                                            <img src={img02} className="img-fluid" alt="img02"></img>
+                                            <img src={img02} className="img-fluid hide" alt="img02"></img>
                                         </a>
                                     </figure>
 
                                     <figure className="col-md-3">
                                         <a href={img03} data-size="781x1172" data-toggle="lightbox" data-gallery="art-gallery">
-                                            <img src={img03} className="img-fluid" alt="img03"></img>
+                                            <img src={img03} className="img-fluid hide" alt="img03"></img>
                                         </a>
                                     </figure>
 
@@ -63,20 +63,20 @@ const Art = () => {
 
                                     <figure className="col-md-4">
                                         <a href={img05} data-size="1600x1067" data-toggle="lightbox" data-gallery="art-gallery">
-                                            <img src={img05} className="img-fluid" alt="img05"></img>
+                                            <img src={img05} className="img-fluid hide" alt="img05"></img>
                                         </a>
                                     </figure>
 
                                     <figure className="col-md-4">
                                         <a href={img07} data-size="1600x1067" data-toggle="lightbox" data-gallery="art-gallery">
-                                            <img src={img07} className="img-fluid" alt="img07"></img>
+                                            <img src={img07} className="img-fluid hide" alt="img07"></img>
                                         </a>
                                     </figure>
 
 
                                     <figure className="col-md-4">
                                         <a href={img08} data-size="1600x1067" data-toggle="lightbox" data-gallery="art-gallery">
-                                            <img src={img08} className="img-fluid" alt="img08"></img>
+                                            <img src={img08} className="img-fluid hide" alt="img08"></img>
                                         </a>
                                     </figure>
 
@@ -86,7 +86,7 @@ const Art = () => {
 
                                     <figure className="col-md-4">
                                         <a href={img09} data-size="781x1172" data-toggle="lightbox" data-gallery="art-gallery">
-                                            <img src={img09} className="img-fluid" alt="img09"></img>
+                                            <img src={img09} className="img-fluid hide" alt="img09"></img>
                                         </a>
                                     </figure>
 
@@ -98,7 +98,7 @@ const Art = () => {
 
                                     <figure className="col-md-4">
                                         <a href={img11} data-size="781x1172" data-toggle="lightbox" data-gallery="art-gallery">
-                                            <img src={img11} className="img-fluid" alt="img11"></img>
+                                            <img src={img11} className="img-fluid hide" alt="img11"></img>
                                         </a>
                                     </figure>
 

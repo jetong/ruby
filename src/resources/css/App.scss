@@ -122,6 +122,13 @@ $default-spacer: 6em;
       color: orange;
     }
   }
+
+  // Show only first testimonial for mobile
+  @media (max-width: 768px) {
+    .card:not(:first-child) {
+      display: none;
+    }
+  }
 }
 
 // ART SECTION
@@ -129,11 +136,19 @@ $default-spacer: 6em;
   .spacer {
     padding-top: $default-spacer - 5em;
   }
+
+  // On mobile, hide all but 3 images
+  @media (max-width: 768px) {
+    .hide {
+      display: none;
+    }
+  }
 }
 
 // CONTACT SECTION
 .contact-wrapper {
   #map-container {
+    // Hide map
     @media (max-width: 768px) {
       display: none;
     }
