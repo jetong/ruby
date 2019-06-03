@@ -7,7 +7,7 @@ body,
 }
 
 .spacer {
-  margin-top: 40px;
+  padding-top: 8em;
 }
 
 .section-wrapper {
@@ -44,14 +44,35 @@ body,
 
 // ABOUT SECTION
 .story-wrapper {
-  min-height: 200px;
   background-color: lightblue;
+  @media (max-width: 992px) {
+    .spacer {
+      padding-top: 0;
+    }
+  }
+
   .container {
-    padding: 6em;
+    max-width: 900px;
+
+    .story-text {
+      padding: 0 3em 0 3em;
+    }
+
+    .center-y {
+      min-height: 100px; /* Fallback for browsers do NOT support vh unit */
+      //min-height: 30vh; /* These two lines are counted as one :-)       */
+
+      display: flex;
+      align-items: center;
+    }
+    .here {
+      // border: 1px solid black;
+      height: 10vh;
+    }
   }
 
   img {
-    width: 300px;
+    width: 250px;
   }
 }
 
@@ -60,23 +81,19 @@ body,
   width: 100%;
   padding: 1em;
 
-  .row {
-    padding: 1em 0;
+  .carousel-outer-wrapper {
+    max-width: 400px;
 
-    .carousel-outer-wrapper {
-      max-width: 400px;
+    .carousel-wrapper {
+      width: 325px;
+      border: 1px solid;
+      padding: 1em;
+      box-shadow: 5px 10px #888888;
 
-      .carousel-wrapper {
-        width: 325px;
-        border: 1px solid;
-        padding: 1em;
-        box-shadow: 5px 10px #888888;
-
-        .img-size img {
-          width: auto;
-          height: 400px;
-          max-height: 400px;
-        }
+      .img-size img {
+        width: auto;
+        height: 400px;
+        max-height: 400px;
       }
     }
   }
