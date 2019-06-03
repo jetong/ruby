@@ -2,8 +2,7 @@ import React from 'react';
 
 const Contact = () => {
     return (
-        <section id="contact" className="section-wrapper">
-
+        <section id="contact" className="contact-wrapper">
             <hr className="my-5"></hr>
 
             {/* Heading */}

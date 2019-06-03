@@ -2,12 +2,13 @@ import React from 'react';
 
 const Testimonials = () => {
     return (
-        <div id="testimonials" className="testimonials-wrapper section-wrapper">
+        <div id="testimonials" className="testimonials-wrapper">
 
-            <hr className=""></hr>
-            <h2 className="font-weight-bold my-5 text-center">Testimonials</h2>
+            <hr py-5></hr>
+            <div className="container spacer">
+                <h2 className="font-weight-bold my-5 text-center">Testimonials</h2>
 
-            <div className="container">
+
 
                 {/* Card group */}
                 <div className="card-group">

@@ -6,12 +6,9 @@ body,
   height: 100vh;
 }
 
+$default-spacer: 6em;
 .spacer {
-  padding-top: 8em;
-}
-
-.section-wrapper {
-  padding-bottom: 2em;
+  padding-top: $default-spacer;
 }
 
 @media (max-width: 768px) {
@@ -45,6 +42,11 @@ body,
 // ABOUT SECTION
 .story-wrapper {
   background-color: lightblue;
+
+  .spacer {
+    padding-top: $default-spacer + 2em;
+  }
+
   @media (max-width: 992px) {
     .spacer {
       padding-top: 0;
@@ -55,19 +57,16 @@ body,
     max-width: 900px;
 
     .story-text {
-      padding: 0 3em 0 3em;
+      padding: 0 3em;
+      .spacer {
+        padding-top: $default-spacer - 4em;
+      }
     }
 
     .center-y {
-      min-height: 100px; /* Fallback for browsers do NOT support vh unit */
-      //min-height: 30vh; /* These two lines are counted as one :-)       */
-
+      min-height: 100px;
       display: flex;
       align-items: center;
-    }
-    .here {
-      // border: 1px solid black;
-      height: 10vh;
     }
   }
 
@@ -78,9 +77,6 @@ body,
 
 // FOOD SECTION
 .food-wrapper {
-  width: 100%;
-  padding: 1em;
-
   .carousel-outer-wrapper {
     max-width: 400px;
 
@@ -99,7 +95,7 @@ body,
   }
 
   @media (max-width: 992px) {
-    height: 180vh;
+    height: 160vh;
     .column-wrapper {
       margin: 1em 0;
     }
@@ -108,6 +104,10 @@ body,
 
 // TESTIMONIALS SECTION
 .testimonials-wrapper {
+  .spacer {
+    padding-top: $default-spacer - 4em;
+  }
+
   .card {
     box-shadow: none;
     padding: 1.25em;
@@ -124,13 +124,22 @@ body,
   }
 }
 
-// CONTACT SECTION
-#map-container {
-  @media (max-width: 768px) {
-    display: none;
+// ART SECTION
+.art-wrapper {
+  .spacer {
+    padding-top: $default-spacer - 5em;
   }
+}
 
-  @media (min-width: 992px) and (max-width: 1200px) {
-    margin-left: 5em;
+// CONTACT SECTION
+.contact-wrapper {
+  #map-container {
+    @media (max-width: 768px) {
+      display: none;
+    }
+
+    @media (min-width: 992px) and (max-width: 1200px) {
+      margin-left: 5em;
+    }
   }
 }
