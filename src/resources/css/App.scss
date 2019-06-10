@@ -13,12 +13,15 @@ $default-spacer: 6em;
 
 @media (max-width: 768px) {
   .navbar:not(.top-nav-collapse) {
-    background-color: #24355c;
+    background-color: transparent;
   }
-}
-@media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-    background-color: #24355c;
+
+  .story-wrapper,
+  .food-wrapper {
+    height: 130vh;
+    .story-text {
+      padding: 0 1em;
+    }
   }
 }
 
@@ -26,11 +29,17 @@ $default-spacer: 6em;
 .header-wrapper {
   #header {
     background: url(../images/coconut_buttercream_macarons.jpg) no-repeat center
-      center fixed;
+      center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+
+    h2 {
+      @media (max-width: 768px) {
+        font-size: 3em;
+      }
+    }
   }
 
   // Navbar collapsed color
@@ -48,6 +57,7 @@ $default-spacer: 6em;
   }
 
   @media (max-width: 992px) {
+    // remove spacing
     .spacer {
       padding-top: 0;
     }
@@ -134,7 +144,11 @@ $default-spacer: 6em;
 // ART SECTION
 .art-wrapper {
   .spacer {
-    padding-top: $default-spacer - 5em;
+    padding-top: $default-spacer - 1em;
+  }
+
+  h2 {
+    margin-bottom: 5em;
   }
 
   // On mobile, hide all but 3 images
@@ -142,19 +156,46 @@ $default-spacer: 6em;
     .hide {
       display: none;
     }
+
+    .spacer {
+      padding-top: 0;
+    }
   }
 }
 
 // CONTACT SECTION
 .contact-wrapper {
-  #map-container {
+  .spacer {
+    padding-top: $default-spacer - 3em;
+  }
+
+  form {
+    margin-bottom: 4em;
+  }
+
+  .map-outer {
+    margin: 2em 3em 3em 3em;
+  }
+
+  .map-inner {
     // Hide map
     @media (max-width: 768px) {
       display: none;
     }
 
-    @media (min-width: 992px) and (max-width: 1200px) {
-      margin-left: 5em;
+    iframe {
+      @media (min-width: 768px) and (max-width: 992px) {
+        width: 625px;
+      }
+    }
+  }
+}
+
+// FOOTER
+.footer-wrapper {
+  .links {
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 }

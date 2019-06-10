@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer className="page-footer unique-color-dark">
+        <footer className="footer-wrapper page-footer unique-color-dark">
 
             {/* Social buttons */}
             <div className="primary-color">
@@ -40,7 +40,7 @@ const Footer = () => {
 
 
             {/* Footer Links */}
-            <div className="container mt-5 mb-4 text-center text-md-left">
+            <div className="links container mt-5 mb-4 text-center text-md-left">
                 <div className="row mt-3">
 
                     {/* First column */}

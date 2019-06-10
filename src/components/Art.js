@@ -20,7 +20,7 @@ const Art = () => {
 
                 <h2 className="font-weight-bold my-5 text-center">Art Work</h2>
 
-                <div className="container">
+                <div className="container spacer">
                     {/* First row */}
                     <div className="row">
 
